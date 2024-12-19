@@ -1,0 +1,6 @@
+CONFIG set allow.mlock=1;
+CONFIG set ip6=inherit;
+RESTART
+PKG transmission
+SYSRC transmission_enable=TRUE
+SERVICE transmission start
